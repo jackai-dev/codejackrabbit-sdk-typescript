@@ -1,0 +1,1418 @@
+{
+  "$schema": "https://omniwrap.dev/schemas/artifact-manifest/v1.json",
+  "artifact": {
+    "capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "page-traversal-hasnextpage-getnextpage-iterpages",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "sse-and-ndjson-streaming",
+      "sse-metadata-last-event-id-and-bounded-resumption",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typed-union-intersection-recursive-models",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "contract_capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typed-union-intersection-recursive-models",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "limitations": [
+      "base-url-query-and-fragment-not-supported",
+      "date-and-decimal-formats-mapped-to-string-and-floating-point",
+      "mutual-tls-requires-injected-transport",
+      "oauth-token-acquisition-not-generated",
+      "runtime-request-validation-not-generated",
+      "sdk-tests-not-generated",
+      "unknown-fields-typed-only-where-additional-properties-declared",
+      "webhook-verification-not-generated",
+      "websocket-transport-not-generated"
+    ],
+    "maturity": "verified",
+    "runtime_capabilities": [
+      "abortsignal-request-cancellation",
+      "api-key-bearer-basic-authentication",
+      "configurable-base-url",
+      "executable-http-client",
+      "fetch-transport-injection",
+      "idempotency-key-enables-safe-retries",
+      "minimum-node-18-runtime",
+      "multi-content-request-encoding",
+      "page-traversal-hasnextpage-getnextpage-iterpages",
+      "presence-preserving-nullable-model-fields",
+      "promise-async-client",
+      "raw-streaming-response-access",
+      "request-lifecycle-hooks",
+      "request-tracing-spans",
+      "resource-oriented-client-accessors",
+      "semantic-parameter-serialization",
+      "semantic-schema-types",
+      "sse-and-ndjson-streaming",
+      "sse-metadata-last-event-id-and-bounded-resumption",
+      "streaming-enforced-response-byte-limit",
+      "timeouts-and-idempotent-retries",
+      "typed-http-errors",
+      "typed-union-intersection-recursive-models",
+      "typescript-declarations",
+      "unknown-fields-preserved-on-decoded-models"
+    ],
+    "type": "typescript-sdk",
+    "vocabulary_features": [
+      {
+        "details": {
+          "capabilities": [
+            "api-key-bearer-basic-authentication"
+          ],
+          "limitations": []
+        },
+        "id": "auth.api-key-bearer-basic",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "mutual-tls-requires-injected-transport"
+          ]
+        },
+        "id": "auth.mutual-tls",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "oauth-token-acquisition-not-generated"
+          ]
+        },
+        "id": "auth.oauth",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "promise-async-client"
+          ],
+          "limitations": []
+        },
+        "id": "client.async",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "executable-http-client"
+          ],
+          "limitations": []
+        },
+        "id": "client.executable",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "resource-oriented-client-accessors"
+          ],
+          "limitations": []
+        },
+        "id": "client.resource-accessors",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "fetch-transport-injection"
+          ],
+          "limitations": []
+        },
+        "id": "client.transport-injection",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typed-http-errors"
+          ],
+          "limitations": []
+        },
+        "id": "errors.typed",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typed-union-intersection-recursive-models"
+          ],
+          "limitations": []
+        },
+        "id": "models.composition",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "date-and-decimal-formats-mapped-to-string-and-floating-point"
+          ]
+        },
+        "id": "models.dates-decimals",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "typescript-declarations"
+          ],
+          "limitations": []
+        },
+        "id": "models.declarations",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "unknown-fields-preserved-on-decoded-models"
+          ],
+          "limitations": [
+            "unknown-fields-typed-only-where-additional-properties-declared"
+          ]
+        },
+        "id": "models.extensible",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "presence-preserving-nullable-model-fields"
+          ],
+          "limitations": []
+        },
+        "id": "models.nullability",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "runtime-request-validation-not-generated"
+          ]
+        },
+        "id": "models.runtime-validation",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "semantic-schema-types",
+            "typed-union-intersection-recursive-models"
+          ],
+          "limitations": []
+        },
+        "id": "models.typed",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "request-lifecycle-hooks",
+            "request-tracing-spans"
+          ],
+          "limitations": []
+        },
+        "id": "observability.request-hooks",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "page-traversal-hasnextpage-getnextpage-iterpages"
+          ],
+          "limitations": []
+        },
+        "id": "pagination.auto-iteration",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "abortsignal-request-cancellation"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.cancellation",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "idempotency-key-enables-safe-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.idempotency-keys",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.retries",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "timeouts-and-idempotent-retries"
+          ],
+          "limitations": []
+        },
+        "id": "resilience.timeouts",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "minimum-node-18-runtime"
+          ],
+          "limitations": []
+        },
+        "id": "runtime.minimum-version",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "streaming-enforced-response-byte-limit"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.byte-limit",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "raw-streaming-response-access"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.raw-response",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "sse-and-ndjson-streaming"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.sse",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "sse-metadata-last-event-id-and-bounded-resumption"
+          ],
+          "limitations": []
+        },
+        "id": "streaming.sse-resumption",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "websocket-transport-not-generated"
+          ]
+        },
+        "id": "streaming.websocket",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "sdk-tests-not-generated"
+          ]
+        },
+        "id": "testing.generated-tests",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [],
+          "limitations": [
+            "webhook-verification-not-generated"
+          ]
+        },
+        "id": "webhook.verification",
+        "sense": "absent"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "configurable-base-url"
+          ],
+          "limitations": [
+            "base-url-query-and-fragment-not-supported"
+          ]
+        },
+        "id": "wire.base-url",
+        "sense": "partial"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "semantic-parameter-serialization"
+          ],
+          "limitations": []
+        },
+        "id": "wire.parameter-serialization",
+        "sense": "present"
+      },
+      {
+        "details": {
+          "capabilities": [
+            "multi-content-request-encoding"
+          ],
+          "limitations": []
+        },
+        "id": "wire.request-content",
+        "sense": "present"
+      }
+    ],
+    "vocabulary_version": "1.18.0"
+  },
+  "files": {
+    "LICENSE": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128",
+    "README.md": "e2a45228a44c8eaafc2a16bdd44a99c0cccae62f78313afca7b6566c6918d142",
+    "api.md": "82bf5ffe98b82fa7dbef4271dc13ff38ff8ab3e395e73bff1bc97ce93f0a3d08",
+    "client.d.ts": "70f89d323653d3de6641ff9285d5f2ff57841ac3d304258d238c97f41cc2c232",
+    "client.js": "b9fd8deff04ee5032e9e2a79432bb86b23c300eb754ab4159bf0b59066760a74",
+    "core/descriptors.d.ts": "5c53966c1e7eac126536e43215ef530d7f40c30e142ca02e22148dbe9bb56aea",
+    "core/descriptors.js": "78ca9a8dbeca9c85d97cbb5fd2730cf2d3176c286009a256f279ac1e40c1175a",
+    "core/runtime.d.ts": "29671de3544831b8beec9f7bac7c8ea886c9b7cdb70803085622b35d67cdb7df",
+    "core/runtime.js": "021a13a64db064c8d4d5c4408ceb94b4a75b731845f9ca2bc004f9efa3518b38",
+    "error.d.ts": "6acf4eef873ca8600ba0888c8f9dd937118e60f233e2006e5457bd262800af88",
+    "error.js": "6870e7dba2d3e24bf6a48249a4ed31e3410d47782019df26b4f234144c748b31",
+    "index.d.ts": "48d8329511b0fcb6926ea0aab629bf409dfb4a20f45d2d93c49acc08708a78fa",
+    "index.js": "782123b8bcc1f959e28ccb2715c3f6118c6244340b991746da3f54b27ca064d6",
+    "index.mjs": "1eaa2ccc1991e6f0ce868f0ffd86d564894105839294a60ca2dbd422fe13994e",
+    "models.d.ts": "057e4fcb59dbdab3382c35a170ba4120590a45fdf2b320dd67ee72fe6d88979f",
+    "models.js": "ea206b697862a75b63ad05f40f066ef311d8eb1bcf9c1540c60e393272a9a2e0",
+    "package.json": "7439d12e7bf2d4023fa47cf52ac47a3185fa6d7185b5c83228cae0a236463aa0",
+    "resources/analysis.d.ts": "eac3cf0654554f105604a086f4cab4ac523331ee93ef74842a18f54cc1bd2dfc",
+    "resources/analysis.js": "a78025787c796ced3c202d2fb7ae8adbe6de43990808dc1b105b6c72a1b988ac",
+    "resources/analytics.d.ts": "fbc5df00f20a544dcc7debde0fc305bae8a072e305ecd823e4d8d61d8103e231",
+    "resources/analytics.js": "d8da248de99160d57fb9f69b981d40b57f52a2a2d3677a0f9fad8d974b33f9a0",
+    "resources/capabilities.d.ts": "fe2059f66ae7a92bd11e228cacea4ffb2549b108a29b8a14616c075e1a0e5d83",
+    "resources/capabilities.js": "0371d161ee9ad480829a188bca5e9182aba3cc4e5d39dd5fe4f3d6ff838715d5",
+    "resources/compliance.d.ts": "29f461bb95bc75d4ce9fa746b6f6e1acd5134281a152eea678a62ebd7735aadb",
+    "resources/compliance.js": "1c1bf6d53e485122fe59ae1d23bc3017e9f2a527b38bc0a6cb0cb70bb5eb2e3a",
+    "resources/health.d.ts": "982b696fc589ab350418403326091a53da16807df19fdf6a338388842c457e47",
+    "resources/health.js": "042dedcf0448cb85f2bc8dd605d295ccf24a59cdc9c81050597df78862d8addb",
+    "resources/index.d.ts": "d84b86e85d52a0db1b2a0a965f33fe9b774efcabfdf40626f5a587b0d74ad8fa",
+    "resources/index.js": "7ac58ed577baf549ae3809e3ce275e4034b3c8fab67fbc0b1f2df3a57ac77f05",
+    "resources/reviews.d.ts": "cf0bef9fff77506114a8f0ee792991ec5ed8f372aaa57dcd84e5396375de7d94",
+    "resources/reviews.js": "5230bcc0c31909c0f8af1c8f62b1fbd67b3a1f03b7180216e3e135c9a50e99fd",
+    "resources/saas.d.ts": "67d81d1aebe1ddd599c17b1fdbe560a715e6adac6a40b8aac95b7278c33d88ad",
+    "resources/saas.js": "4fa66116ba7a6983795904b6dfa89e48e5d4c71952269a3648c66898eb13ea2a",
+    "resources/sbom.d.ts": "82a5f22f828b595a9aa8f4694b7685520ead0dbb7cb0ae6b55de36e92e9b1e8a",
+    "resources/sbom.js": "947404e468ff3b6b6304bca31ea8ae0eb0175fe92b925b1b62a5d8ba49863d53",
+    "resources/supplyChain.d.ts": "bda1b174cbdf41387dc96036d2b201b88cff6f44c480835eb2114e677f76470d",
+    "resources/supplyChain.js": "a88fb5fbfe20c7434d99eac34b30dca0708926b9da8d919f94679c1c05897ef6",
+    "resources/tasks.d.ts": "e3963bcf708f83c3f0fb09a69aa3f273b36c75455b3efb0a15aaf90f0733cbbf",
+    "resources/tasks.js": "fa4bb719633ef6763f8517f44bf05ed815ef2ea988659896f0aae948f86e50b3",
+    "resources/triage.d.ts": "9afe79fc057c5344b539dc06afba71fbca64f52e7eb544740e304053c045dcbb",
+    "resources/triage.js": "35b2c2014092bc9720aadce235e9ccaaddcea693ebbe9d8f5b265f552a72eb43",
+    "resources/waitlist.d.ts": "238c1392ff728f862c3c330f439fc6b075ee49fc4a8effc089e257a57d3bdeb8",
+    "resources/waitlist.js": "2903501adb840aa66901bcb545cb93edf1a3ff91ab4d78148429a7d5b46dd15b",
+    "src/client.ts": "cab0b46ba7db2496986a13db52c594fb4ee6a296ae649b6b00289e52834db8e3",
+    "src/core/descriptors.ts": "5c53966c1e7eac126536e43215ef530d7f40c30e142ca02e22148dbe9bb56aea",
+    "src/core/runtime.ts": "cd7ebe36777f3ecaff93b33b9809869f18bcda61c112831052f27344cfb5d914",
+    "src/error.ts": "c6fcd7a85bc4d45bd887095aa1788ecd03805a6af952f471570bf088d83894fb",
+    "src/index.ts": "c1d46c9686aadf8d84ffa5036cdb7e147f55635667df69bdc6dc21421b8b68fb",
+    "src/models.ts": "057e4fcb59dbdab3382c35a170ba4120590a45fdf2b320dd67ee72fe6d88979f",
+    "src/resources/analysis.ts": "eac3cf0654554f105604a086f4cab4ac523331ee93ef74842a18f54cc1bd2dfc",
+    "src/resources/analytics.ts": "fbc5df00f20a544dcc7debde0fc305bae8a072e305ecd823e4d8d61d8103e231",
+    "src/resources/capabilities.ts": "fe2059f66ae7a92bd11e228cacea4ffb2549b108a29b8a14616c075e1a0e5d83",
+    "src/resources/compliance.ts": "29f461bb95bc75d4ce9fa746b6f6e1acd5134281a152eea678a62ebd7735aadb",
+    "src/resources/health.ts": "982b696fc589ab350418403326091a53da16807df19fdf6a338388842c457e47",
+    "src/resources/index.ts": "d84b86e85d52a0db1b2a0a965f33fe9b774efcabfdf40626f5a587b0d74ad8fa",
+    "src/resources/reviews.ts": "cf0bef9fff77506114a8f0ee792991ec5ed8f372aaa57dcd84e5396375de7d94",
+    "src/resources/saas.ts": "67d81d1aebe1ddd599c17b1fdbe560a715e6adac6a40b8aac95b7278c33d88ad",
+    "src/resources/sbom.ts": "82a5f22f828b595a9aa8f4694b7685520ead0dbb7cb0ae6b55de36e92e9b1e8a",
+    "src/resources/supplyChain.ts": "bda1b174cbdf41387dc96036d2b201b88cff6f44c480835eb2114e677f76470d",
+    "src/resources/tasks.ts": "e3963bcf708f83c3f0fb09a69aa3f273b36c75455b3efb0a15aaf90f0733cbbf",
+    "src/resources/triage.ts": "9afe79fc057c5344b539dc06afba71fbca64f52e7eb544740e304053c045dcbb",
+    "src/resources/waitlist.ts": "238c1392ff728f862c3c330f439fc6b075ee49fc4a8effc089e257a57d3bdeb8"
+  },
+  "generator": {
+    "name": "omniwrap",
+    "version": "2.0.0"
+  },
+  "license": {
+    "id": null,
+    "kind": "proprietary",
+    "sha256": "fb11dfcf40507855f2fbe0fdcee036cfe549b3ef7e52ebeb09e0dd66d552a128"
+  },
+  "manifest_version": "1.3.0",
+  "security": {
+    "automatic_token_acquisition": false,
+    "credential_bindings": {
+      "cross_scheme_reuse": "only-declared-fallbacks",
+      "default_credential_scheme": null,
+      "schemes": {
+        "apiKeyHeader": {
+          "environment_variable": null,
+          "fallback": null,
+          "generic_options": [
+            "api_key"
+          ],
+          "option": "apiKeyHeader"
+        },
+        "bearerAuth": {
+          "environment_variable": null,
+          "fallback": null,
+          "generic_options": [
+            "access_token"
+          ],
+          "option": "bearer"
+        }
+      }
+    },
+    "credentials_persisted": false,
+    "cross_origin_pagination": "denied",
+    "network_access": "only when caller invokes an SDK operation",
+    "transport_injection": true
+  },
+  "source": {
+    "diagnostics": [],
+    "diagnostics_omitted_count": 0,
+    "diagnostics_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "ecosystem": "semantic",
+    "legacy_ir_sha256": null,
+    "location": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439",
+    "name": "CodeJackRabbit",
+    "normalization_diagnostic_count": 0,
+    "package_metadata": {
+      "contact_email": null,
+      "contact_name": null,
+      "contact_url": null,
+      "license_identifier": null,
+      "license_name": null,
+      "license_url": null,
+      "provenance": null,
+      "terms_of_service_url": null
+    },
+    "projection_loss_count": 0,
+    "provenance": [
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 10,
+        "pointer": "/servers/0/url",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 132,
+        "pointer": "/paths/~1health/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 143,
+        "pointer": "/paths/~1v1~1capabilities/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 173,
+        "pointer": "/paths/~1v1~1waitlist/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 289,
+        "pointer": "/paths/~1v1~1analytics~1roi/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 405,
+        "pointer": "/paths/~1v1~1triage/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 416,
+        "pointer": "/paths/~1v1~1tasks/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 14,
+        "confidence": 1.0,
+        "line": 446,
+        "pointer": "/paths/~1v1~1saas~1blueprint/get",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 154,
+        "pointer": "/paths/~1v1~1waitlist/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 184,
+        "pointer": "/paths/~1v1~1reviews/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 205,
+        "pointer": "/paths/~1v1~1reviews~1autofix/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 226,
+        "pointer": "/paths/~1v1~1reviews~1risk-radar/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 247,
+        "pointer": "/paths/~1v1~1supply-chain~1analyze/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 268,
+        "pointer": "/paths/~1v1~1sbom/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 300,
+        "pointer": "/paths/~1v1~1analysis~1contract-drift/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 321,
+        "pointer": "/paths/~1v1~1compliance~1sarif/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 342,
+        "pointer": "/paths/~1v1~1compliance~1gate/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 363,
+        "pointer": "/paths/~1v1~1analysis~1split-pr/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 384,
+        "pointer": "/paths/~1v1~1analysis~1perf-finops/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 425,
+        "pointer": "/paths/~1v1~1tasks/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 457,
+        "pointer": "/paths/~1v1~1saas~1surface-lease~1issue/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 478,
+        "pointer": "/paths/~1v1~1saas~1metering~1reserve/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 15,
+        "confidence": 1.0,
+        "line": 499,
+        "pointer": "/paths/~1v1~1saas~1metering~1finalize/post",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 136,
+        "pointer": "/paths/~1health/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 147,
+        "pointer": "/paths/~1v1~1capabilities/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 168,
+        "pointer": "/paths/~1v1~1waitlist/post/responses/201",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 177,
+        "pointer": "/paths/~1v1~1waitlist/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 198,
+        "pointer": "/paths/~1v1~1reviews/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 219,
+        "pointer": "/paths/~1v1~1reviews~1autofix/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 240,
+        "pointer": "/paths/~1v1~1reviews~1risk-radar/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 261,
+        "pointer": "/paths/~1v1~1supply-chain~1analyze/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 282,
+        "pointer": "/paths/~1v1~1sbom/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 293,
+        "pointer": "/paths/~1v1~1analytics~1roi/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 314,
+        "pointer": "/paths/~1v1~1analysis~1contract-drift/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 335,
+        "pointer": "/paths/~1v1~1compliance~1sarif/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 356,
+        "pointer": "/paths/~1v1~1compliance~1gate/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 377,
+        "pointer": "/paths/~1v1~1analysis~1split-pr/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 398,
+        "pointer": "/paths/~1v1~1analysis~1perf-finops/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 409,
+        "pointer": "/paths/~1v1~1triage/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 420,
+        "pointer": "/paths/~1v1~1tasks/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 439,
+        "pointer": "/paths/~1v1~1tasks/post/responses/201",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 450,
+        "pointer": "/paths/~1v1~1saas~1blueprint/get/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 471,
+        "pointer": "/paths/~1v1~1saas~1surface-lease~1issue/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 492,
+        "pointer": "/paths/~1v1~1saas~1metering~1reserve/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 18,
+        "confidence": 1.0,
+        "line": 513,
+        "pointer": "/paths/~1v1~1saas~1metering~1finalize/post/responses/200",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 19,
+        "confidence": 1.0,
+        "line": 44,
+        "pointer": "/components/schemas/FileChange/properties/diff",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 19,
+        "confidence": 1.0,
+        "line": 83,
+        "pointer": "/components/schemas/WaitlistRequest/properties/name",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 20,
+        "confidence": 1.0,
+        "line": 58,
+        "pointer": "/components/schemas/ReviewRequest/properties/files",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 20,
+        "confidence": 1.0,
+        "line": 79,
+        "pointer": "/components/schemas/WaitlistRequest/properties/email",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 112,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/policy",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 24,
+        "pointer": "/components/securitySchemes/bearerAuth",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 35,
+        "pointer": "/components/schemas/FileChange",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 21,
+        "confidence": 1.0,
+        "line": 92,
+        "pointer": "/components/schemas/WaitlistRequest/properties/source",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 22,
+        "confidence": 1.0,
+        "line": 105,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/findings/items",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 22,
+        "confidence": 1.0,
+        "line": 60,
+        "pointer": "/components/schemas/ReviewRequest/properties/files/items",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 22,
+        "confidence": 1.0,
+        "line": 64,
+        "pointer": "/components/schemas/ReviewRequest/properties/profile",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 22,
+        "confidence": 1.0,
+        "line": 89,
+        "pointer": "/components/schemas/WaitlistRequest/properties/useCase",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 23,
+        "confidence": 1.0,
+        "line": 100,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/reviewId",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 23,
+        "confidence": 1.0,
+        "line": 103,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/findings",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 23,
+        "confidence": 1.0,
+        "line": 28,
+        "pointer": "/components/securitySchemes/apiKeyHeader",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 23,
+        "confidence": 1.0,
+        "line": 41,
+        "pointer": "/components/schemas/FileChange/properties/filename",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 109,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/riskScore",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 157,
+        "pointer": "/paths/~1v1~1waitlist/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 187,
+        "pointer": "/paths/~1v1~1reviews/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 208,
+        "pointer": "/paths/~1v1~1reviews~1autofix/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 229,
+        "pointer": "/paths/~1v1~1reviews~1risk-radar/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 250,
+        "pointer": "/paths/~1v1~1supply-chain~1analyze/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 271,
+        "pointer": "/paths/~1v1~1sbom/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 303,
+        "pointer": "/paths/~1v1~1analysis~1contract-drift/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 324,
+        "pointer": "/paths/~1v1~1compliance~1sarif/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 345,
+        "pointer": "/paths/~1v1~1compliance~1gate/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 366,
+        "pointer": "/paths/~1v1~1analysis~1split-pr/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 387,
+        "pointer": "/paths/~1v1~1analysis~1perf-finops/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 428,
+        "pointer": "/paths/~1v1~1tasks/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 460,
+        "pointer": "/paths/~1v1~1saas~1surface-lease~1issue/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 481,
+        "pointer": "/paths/~1v1~1saas~1metering~1reserve/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 502,
+        "pointer": "/paths/~1v1~1saas~1metering~1finalize/post/requestBody",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 24,
+        "confidence": 1.0,
+        "line": 52,
+        "pointer": "/components/schemas/ReviewRequest",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 161,
+        "pointer": "/paths/~1v1~1waitlist/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 191,
+        "pointer": "/paths/~1v1~1reviews/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 212,
+        "pointer": "/paths/~1v1~1reviews~1autofix/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 233,
+        "pointer": "/paths/~1v1~1reviews~1risk-radar/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 254,
+        "pointer": "/paths/~1v1~1supply-chain~1analyze/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 275,
+        "pointer": "/paths/~1v1~1sbom/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 307,
+        "pointer": "/paths/~1v1~1analysis~1contract-drift/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 328,
+        "pointer": "/paths/~1v1~1compliance~1sarif/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 349,
+        "pointer": "/paths/~1v1~1compliance~1gate/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 370,
+        "pointer": "/paths/~1v1~1analysis~1split-pr/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 391,
+        "pointer": "/paths/~1v1~1analysis~1perf-finops/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 432,
+        "pointer": "/paths/~1v1~1tasks/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 464,
+        "pointer": "/paths/~1v1~1saas~1surface-lease~1issue/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 485,
+        "pointer": "/paths/~1v1~1saas~1metering~1reserve/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 25,
+        "confidence": 1.0,
+        "line": 506,
+        "pointer": "/paths/~1v1~1saas~1metering~1finalize/post/requestBody/content/application~1json/schema",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 26,
+        "confidence": 1.0,
+        "line": 115,
+        "pointer": "/components/schemas/ComplianceGateRequest/properties/policy/properties/profile",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 26,
+        "confidence": 1.0,
+        "line": 47,
+        "pointer": "/components/schemas/FileChange/properties/fileContent",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 26,
+        "confidence": 1.0,
+        "line": 73,
+        "pointer": "/components/schemas/WaitlistRequest",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 27,
+        "confidence": 1.0,
+        "line": 86,
+        "pointer": "/components/schemas/WaitlistRequest/properties/organization",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      },
+      {
+        "column": 32,
+        "confidence": 1.0,
+        "line": 97,
+        "pointer": "/components/schemas/ComplianceGateRequest",
+        "source": "local://ef2d34ee71ccee4cf3c5c09a1fd5b7d16499cbf18000b97015676ee2ddeb1439"
+      }
+    ],
+    "provenance_count": 98,
+    "provenance_omitted_count": 0,
+    "provenance_sha256": "7b7689b446f5edc95184b0108234e182eaf5971468ea45e43a86f1c74a70a207",
+    "semantic_fingerprint": "fe0f22558fb43411082df5e0762a23e9eaf90a9c713fe4ee9cfd27379222803d",
+    "semantic_ir_sha256": "fe0f22558fb43411082df5e0762a23e9eaf90a9c713fe4ee9cfd27379222803d",
+    "semantic_ir_version": "1.14.0",
+    "version": "0.2.0"
+  },
+  "surface": {
+    "model_types": {
+      "ComplianceGateRequest": {
+        "export": "ComplianceGateRequest",
+        "properties": {
+          "findings": {
+            "required": false,
+            "type": "Array<Record<string, unknown>>"
+          },
+          "policy": {
+            "required": false,
+            "type": "{\n  \"profile\"?: \"soc2\" | \"pci-dss\" | \"hipaa\" | \"standard\";\n}"
+          },
+          "reviewId": {
+            "required": false,
+            "type": "string"
+          },
+          "riskScore": {
+            "required": false,
+            "type": "number"
+          }
+        },
+        "type": "{\n  \"reviewId\"?: string;\n  \"findings\"?: Array<Record<string, unknown>>;\n  \"riskScore\"?: number;\n  \"policy\"?: {\n  \"profile\"?: \"soc2\" | \"pci-dss\" | \"hipaa\" | \"standard\";\n};\n}"
+      },
+      "FileChange": {
+        "export": "FileChange",
+        "properties": {
+          "diff": {
+            "required": false,
+            "type": "string"
+          },
+          "fileContent": {
+            "required": false,
+            "type": "string"
+          },
+          "filename": {
+            "required": true,
+            "type": "string"
+          }
+        },
+        "type": "{\n  \"filename\": string;\n  \"diff\"?: string;\n  \"fileContent\"?: string;\n}"
+      },
+      "ReviewRequest": {
+        "export": "ReviewRequest",
+        "properties": {
+          "files": {
+            "required": true,
+            "type": "Array<FileChange>"
+          },
+          "profile": {
+            "required": false,
+            "type": "\"chill\" | \"assertive\""
+          }
+        },
+        "type": "{\n  \"files\": Array<FileChange>;\n  \"profile\"?: \"chill\" | \"assertive\";\n}"
+      },
+      "WaitlistRequest": {
+        "export": "WaitlistRequest",
+        "properties": {
+          "email": {
+            "required": true,
+            "type": "string"
+          },
+          "name": {
+            "required": false,
+            "type": "string"
+          },
+          "organization": {
+            "required": false,
+            "type": "string"
+          },
+          "source": {
+            "required": false,
+            "type": "string"
+          },
+          "useCase": {
+            "required": false,
+            "type": "string"
+          }
+        },
+        "type": "{\n  \"email\": string;\n  \"name\"?: string;\n  \"organization\"?: string;\n  \"useCase\"?: string;\n  \"source\"?: string;\n}"
+      }
+    },
+    "operation_methods": {
+      "analyzeContractDrift": {
+        "flat": "analyzeContractDrift",
+        "resource": "analysis.analyzeContractDrift"
+      },
+      "analyzePerfFinOps": {
+        "flat": "analyzePerfFinOps",
+        "resource": "analysis.analyzePerfFinOps"
+      },
+      "analyzeSupplyChain": {
+        "flat": "analyzeSupplyChain",
+        "resource": "supplyChain.analyze"
+      },
+      "buildAutofixBundle": {
+        "flat": "buildAutofixBundle",
+        "resource": "reviews.buildAutofixBundle"
+      },
+      "computeRiskRadar": {
+        "flat": "computeRiskRadar",
+        "resource": "reviews.computeRiskRadar"
+      },
+      "createCodingTask": {
+        "flat": "createCodingTask",
+        "resource": "tasks.createCoding"
+      },
+      "createReview": {
+        "flat": "createReview",
+        "resource": "reviews.create"
+      },
+      "evaluateComplianceGate": {
+        "flat": "evaluateComplianceGate",
+        "resource": "compliance.evaluateGate"
+      },
+      "exportSarif": {
+        "flat": "exportSarif",
+        "resource": "compliance.exportSarif"
+      },
+      "finalizeMeteringQuota": {
+        "flat": "finalizeMeteringQuota",
+        "resource": "saas.finalizeMeteringQuota"
+      },
+      "generateSbom": {
+        "flat": "generateSbom",
+        "resource": "sbom.generate"
+      },
+      "getAnalyticsRoi": {
+        "flat": "getAnalyticsRoi",
+        "resource": "analytics.getRoi"
+      },
+      "getCapabilities": {
+        "flat": "getCapabilities",
+        "resource": "capabilities.get"
+      },
+      "getHealth": {
+        "flat": "getHealth",
+        "resource": "health.get"
+      },
+      "getSaasBlueprint": {
+        "flat": "getSaasBlueprint",
+        "resource": "saas.getBlueprint"
+      },
+      "getTriageQueue": {
+        "flat": "getTriageQueue",
+        "resource": "triage.getQueue"
+      },
+      "issueSurfaceLease": {
+        "flat": "issueSurfaceLease",
+        "resource": "saas.issueSurfaceLease"
+      },
+      "listCodingTasks": {
+        "flat": "listCodingTasks",
+        "resource": "tasks.listCoding"
+      },
+      "listWaitlist": {
+        "flat": "listWaitlist",
+        "resource": "waitlist.list"
+      },
+      "planStackedPrSplit": {
+        "flat": "planStackedPrSplit",
+        "resource": "analysis.planStackedPrSplit"
+      },
+      "registerWaitlist": {
+        "flat": "registerWaitlist",
+        "resource": "waitlist.register"
+      },
+      "reserveMeteringQuota": {
+        "flat": "reserveMeteringQuota",
+        "resource": "saas.reserveMeteringQuota"
+      }
+    }
+  }
+}

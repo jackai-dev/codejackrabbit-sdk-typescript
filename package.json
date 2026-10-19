@@ -1,0 +1,92 @@
+{
+  "name": "codejackrabbit-sdk",
+  "version": "0.2.0",
+  "omniwrap": {
+    "sourceVersion": "0.2.0"
+  },
+  "main": "./index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "README.md",
+    "api.md",
+    "omniwrap-artifact.json",
+    "index.d.ts",
+    "client.d.ts",
+    "client.js",
+    "core/descriptors.d.ts",
+    "core/descriptors.js",
+    "core/runtime.d.ts",
+    "core/runtime.js",
+    "error.d.ts",
+    "error.js",
+    "models.d.ts",
+    "models.js",
+    "resources/analysis.d.ts",
+    "resources/analysis.js",
+    "resources/analytics.d.ts",
+    "resources/analytics.js",
+    "resources/capabilities.d.ts",
+    "resources/capabilities.js",
+    "resources/compliance.d.ts",
+    "resources/compliance.js",
+    "resources/health.d.ts",
+    "resources/health.js",
+    "resources/index.d.ts",
+    "resources/index.js",
+    "resources/reviews.d.ts",
+    "resources/reviews.js",
+    "resources/saas.d.ts",
+    "resources/saas.js",
+    "resources/sbom.d.ts",
+    "resources/sbom.js",
+    "resources/supplyChain.d.ts",
+    "resources/supplyChain.js",
+    "resources/tasks.d.ts",
+    "resources/tasks.js",
+    "resources/triage.d.ts",
+    "resources/triage.js",
+    "resources/waitlist.d.ts",
+    "resources/waitlist.js",
+    "src/client.ts",
+    "src/core/descriptors.ts",
+    "src/core/runtime.ts",
+    "src/error.ts",
+    "src/index.ts",
+    "src/models.ts",
+    "src/resources/analysis.ts",
+    "src/resources/analytics.ts",
+    "src/resources/capabilities.ts",
+    "src/resources/compliance.ts",
+    "src/resources/health.ts",
+    "src/resources/index.ts",
+    "src/resources/reviews.ts",
+    "src/resources/saas.ts",
+    "src/resources/sbom.ts",
+    "src/resources/supplyChain.ts",
+    "src/resources/tasks.ts",
+    "src/resources/triage.ts",
+    "src/resources/waitlist.ts",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./index.mjs"
+      },
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./index.js"
+      },
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "types": "./index.d.ts",
+  "license": "UNLICENSED"
+}
